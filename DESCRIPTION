@@ -6,6 +6,6 @@ Date: 2016-03-05
 Author: Justin Brantley <justinbrantley@me.com>
 Maintainer: Justin Brantley <justinbrantley@me.com>
 URL: https://github.com/fascinatingfingers/ZillowR
-Description: Make calls to the Zillow API using R functions
+Description: Make calls to the Zillow API using R functions.
 License: GPL-3
 LazyData: TRUE
