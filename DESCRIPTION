@@ -9,3 +9,4 @@ URL: https://github.com/fascinatingfingers/ZillowR
 Description: Make calls to the Zillow API using R functions.
 License: GPL-3
 LazyData: TRUE
+Suggests: testthat
