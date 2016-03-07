@@ -28,4 +28,10 @@ as the Zillow Property ID (ZPID) and current Zestimate. It also includes the
 date the Zestimate was computed, a valuation range and the Zestimate ranking
 for the property within its ZIP code.
 }
+\examples{
+\dontrun{
+GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA')
+GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA', rentzestimate = TRUE)
+}
+}
 

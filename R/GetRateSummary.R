@@ -21,6 +21,10 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' GetRateSummary()
+#' GetRateSummary(state = 'WA')
+#' }
 GetRateSummary <- function(
 
     state = NULL,

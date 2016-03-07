@@ -32,6 +32,10 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' GetZestimate(zpid = 48749425)
+#' GetZestimate(zpid = 48749425, rentzestimate = TRUE)
+#' }
 GetZestimate <- function(
     zpid = NULL,
     rentzestimate = FALSE,

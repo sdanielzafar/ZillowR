@@ -24,6 +24,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' GetUpdatedPropertyDetails(zpid = 48749425)
+#' }
 GetUpdatedPropertyDetails <- function(
     zpid = NULL,
 

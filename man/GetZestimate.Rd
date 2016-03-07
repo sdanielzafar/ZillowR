@@ -41,4 +41,10 @@ database. For such properties, we do have tax assessment data, but that is
 not provided through the API. For more information, see our Zestimate
 coverage.
 }
+\examples{
+\dontrun{
+GetZestimate(zpid = 48749425)
+GetZestimate(zpid = 48749425, rentzestimate = TRUE)
+}
+}
 

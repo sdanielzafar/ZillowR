@@ -31,4 +31,9 @@ set contains the following attributes:
       description, and neighborhood and school names
 }
 }
+\examples{
+\dontrun{
+GetUpdatedPropertyDetails(zpid = 48749425)
+}
+}
 

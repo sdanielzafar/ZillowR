@@ -37,4 +37,12 @@ mortgage rate. The API returns the estimated monthly payment per loan type
 (30-year fixed, 15-year fixed, and 5/1 ARM). If a ZIP code is entered, the
 estimated taxes and insurance are returned in the result set.
 }
+\examples{
+\dontrun{
+GetMonthlyPayments(price = 300000L)
+GetMonthlyPayments(price = 300000L, down = 10)
+GetMonthlyPayments(price = 300000L, dollarsdown = 10000L)
+GetMonthlyPayments(price = 300000L, zip = 98109)
+}
+}
 

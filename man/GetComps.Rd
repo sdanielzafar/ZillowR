@@ -28,4 +28,10 @@ property. The result set returned contains the address, Zillow property
 identifier, and Zestimate for the comparable properties and the principal
 property for which the comparables are being retrieved.
 }
+\examples{
+\dontrun{
+GetComps(zpid = 48749425, count = 5)
+GetComps(zpid = 48749425, count = 5, rentzestimate = TRUE)
+}
+}
 

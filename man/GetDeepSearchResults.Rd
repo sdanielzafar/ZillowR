@@ -28,4 +28,10 @@ that is provided by the GetSearchResults API. Moreover, this API call also
 gives rich property data like lot size, year built, bath/beds, last sale
 details etc.
 }
+\examples{
+\dontrun{
+GetDeepSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA')
+GetDeepSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA', rentzestimate = TRUE)
+}
+}
 

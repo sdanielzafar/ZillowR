@@ -27,4 +27,10 @@ from real quotes borrowers receive from lenders just seconds before the rate
 data is returned. The GetRateSummary API returns rates for a specific state
 if the optional state parameter is used.
 }
+\examples{
+\dontrun{
+GetRateSummary()
+GetRateSummary(state = 'WA')
+}
+}
 

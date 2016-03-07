@@ -19,6 +19,10 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' GetComps(zpid = 48749425, count = 5)
+#' GetComps(zpid = 48749425, count = 5, rentzestimate = TRUE)
+#' }
 GetComps <- function(
     zpid = NULL, count = NULL,
     rentzestimate = FALSE,

@@ -29,4 +29,10 @@ property identifier, and Zestimate for the comparable properties and the
 principal property for which the comparables are being retrieved. This API
 call also returns rich property data for the comparables.
 }
+\examples{
+\dontrun{
+GetDeepComps(zpid = 48749425, count = 5)
+GetDeepComps(zpid = 48749425, count = 5, rentzestimate = TRUE)
+}
+}
 
