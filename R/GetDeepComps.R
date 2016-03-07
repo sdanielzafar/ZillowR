@@ -37,4 +37,13 @@ GetDeepComps <- function(
     if (length(validation_errors) > 0) {
         stop(paste(validation_errors, collapse = '\n'))
     }
+
+    request <- url_encode_request(url,
+        zpid = zpid,
+        count = count,
+        rentzestimate = rentzestimate,
+        zws_id = zws_id
+    )
+
+    return(request)
 }

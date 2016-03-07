@@ -46,4 +46,15 @@ GetChart <- function(
     if (length(validation_errors) > 0) {
         stop(paste(validation_errors, collapse = '\n'))
     }
+
+    request <- url_encode_request(url,
+        zpid = zpid,
+        unit_type = unit_type,
+        width = width,
+        height = height,
+        chartDuration = chartDuration,
+        zws_id = zws_id
+    )
+
+    return(request)
 }

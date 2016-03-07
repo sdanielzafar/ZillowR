@@ -36,4 +36,11 @@ GetRateSummary <- function(
     if (length(validation_errors) > 0) {
         stop(paste(validation_errors, collapse = '\n'))
     }
+
+    request <- url_encode_request(url,
+        state = state,
+        zws_id = zws_id
+    )
+
+    return(request)
 }
