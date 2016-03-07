@@ -38,10 +38,10 @@ GetDeepSearchResults <- function(
     }
 
     request <- url_encode_request(url,
-        address = address,
-        citystatezip = citystatezip,
-        rentzestimate = rentzestimate,
-        zws_id = zws_id
+        'address' = address,
+        'citystatezip' = citystatezip,
+        'rentzestimate' = rentzestimate,
+        'zws-id' = zws_id
     )
 
     return(request)

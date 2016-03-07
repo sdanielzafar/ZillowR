@@ -41,8 +41,8 @@ GetUpdatedPropertyDetails <- function(
     }
 
     request <- url_encode_request(url,
-        zpid = zpid,
-        zws_id = zws_id
+        'zpid' = zpid,
+        'zws-id' = zws_id
     )
 
     return(request)

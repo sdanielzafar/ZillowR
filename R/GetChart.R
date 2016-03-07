@@ -48,12 +48,12 @@ GetChart <- function(
     }
 
     request <- url_encode_request(url,
-        zpid = zpid,
-        unit_type = unit_type,
-        width = width,
-        height = height,
-        chartDuration = chartDuration,
-        zws_id = zws_id
+        'zpid' = zpid,
+        'unit-type' = unit_type,
+        'width' = width,
+        'height' = height,
+        'chartDuration' = chartDuration,
+        'zws-id' = zws_id
     )
 
     return(request)

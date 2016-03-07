@@ -50,9 +50,9 @@ GetZestimate <- function(
     }
 
     request <- url_encode_request(url,
-        zpid = zpid,
-        rentzestimate = rentzestimate,
-        zws_id = zws_id
+        'zpid' = zpid,
+        'rentzestimate' = rentzestimate,
+        'zws-id' = zws_id
     )
 
     return(request)

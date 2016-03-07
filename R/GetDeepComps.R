@@ -39,10 +39,10 @@ GetDeepComps <- function(
     }
 
     request <- url_encode_request(url,
-        zpid = zpid,
-        count = count,
-        rentzestimate = rentzestimate,
-        zws_id = zws_id
+        'zpid' = zpid,
+        'count' = count,
+        'rentzestimate' = rentzestimate,
+        'zws-id' = zws_id
     )
 
     return(request)

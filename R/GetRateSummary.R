@@ -38,8 +38,8 @@ GetRateSummary <- function(
     }
 
     request <- url_encode_request(url,
-        state = state,
-        zws_id = zws_id
+        'state' = state,
+        'zws-id' = zws_id
     )
 
     return(request)

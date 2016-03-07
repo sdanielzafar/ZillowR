@@ -47,11 +47,11 @@ GetMonthlyPayments <- function(
     }
 
     request <- url_encode_request(url,
-        price = price,
-        down = down,
-        dollarsdown = dollarsdown,
-        zip = zip,
-        zws_id = zws_id
+        'price' = price,
+        'down' = down,
+        'dollarsdown' = dollarsdown,
+        'zip' = zip,
+        'zws-id' = zws_id
     )
 
     return(request)
