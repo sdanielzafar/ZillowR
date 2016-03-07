@@ -1,4 +1,6 @@
-^packrat/
-^\.Rprofile$
 ^.*\.Rproj$
+^\.RData$
+^\.Rhistory$
+^\.Rprofile$
 ^\.Rproj\.user$
+^packrat/
