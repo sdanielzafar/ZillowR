@@ -31,7 +31,8 @@ details etc.
 \examples{
 \dontrun{
 GetDeepSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA')
-GetDeepSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA', rentzestimate = TRUE)
+GetDeepSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA',
+                     rentzestimate = TRUE)
 }
 }
 
