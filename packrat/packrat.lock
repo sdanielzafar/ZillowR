@@ -17,7 +17,6 @@ Hash: 11ace6a9a186c17a42e0fa2c49af1223
 Package: brew
 Source: CRAN
 Version: 1.0-6
-Hash: 931f9972deae0f205e1c78a51f33149b
 
 Package: crayon
 Source: CRAN
@@ -108,7 +107,6 @@ Hash: cf342bc407bd5daec77ed1009d5244e1
 Package: stringr
 Source: CRAN
 Version: 1.0.0
-Hash: 2676dd5f88890910962b733b0f9540e1
 Requires: magrittr, stringi
 
 Package: testthat
