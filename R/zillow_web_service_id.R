@@ -20,7 +20,7 @@
 #' \code{set_zillow_web_service_id} invisibly returns \code{NULL}.
 #'
 #' @examples
-#' set_zillow_web_service_id('foo')
+#' set_zillow_web_service_id('ZWSID')
 #' get_zillow_web_service_id()
 #'
 #' @name zillow_web_service_id
