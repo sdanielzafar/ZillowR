@@ -49,7 +49,10 @@ GetUpdatedPropertyDetails <- function(
         'zws-id' = zws_id
     )
 
-    response <- RCurl::getURL(request)
+    response <- tryCatch(
+        RCurl::getURL(request),
+        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+    )
 
     return(response)
 }
