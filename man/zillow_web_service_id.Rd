@@ -34,7 +34,7 @@ Visit the following URL to register for your own Zillow Web Service ID:
 http://www.zillow.com/webservice/Registration.htm
 }
 \examples{
-set_zillow_web_service_id('foo')
+set_zillow_web_service_id('ZWSID')
 get_zillow_web_service_id()
 
 }
