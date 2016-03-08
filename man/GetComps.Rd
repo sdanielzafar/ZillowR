@@ -22,6 +22,18 @@ default: false).}
 
 \item{url}{URL for the GetComps Web Service. Required.}
 }
+\value{
+A named list with the following elements:
+    \describe{
+        \item{\strong{request}}{a list with the request parameters}
+        \item{\strong{message}}{a list of status code(s) and message(s)
+            returned by the API}
+        \item{\strong{response}}{an XMLNode with the API-specific response
+            values. At this time, no further coercion is performed, so you
+            may have to use functions from the \code{XML} package to extract
+            the desired output.}
+    }
+}
 \description{
 The GetComps API returns a list of comparable recent sales for a specified
 property. The result set returned contains the address, Zillow property

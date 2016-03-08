@@ -31,6 +31,18 @@ the value defaults to "1year".}
 
 \item{url}{URL for the GetChart Web Service. Required.}
 }
+\value{
+A named list with the following elements:
+    \describe{
+        \item{\strong{request}}{a list with the request parameters}
+        \item{\strong{message}}{a list of status code(s) and message(s)
+            returned by the API}
+        \item{\strong{response}}{an XMLNode with the API-specific response
+            values. At this time, no further coercion is performed, so you
+            may have to use functions from the \code{XML} package to extract
+            the desired output.}
+    }
+}
 \description{
 The GetChart API generates a URL for an image file that displays historical
 Zestimates for a specific property. The API accepts as input the Zillow

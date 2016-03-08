@@ -21,6 +21,18 @@ default: false).}
 
 \item{url}{URL for the GetDeepSearchResults Web Service. Required.}
 }
+\value{
+A named list with the following elements:
+    \describe{
+        \item{\strong{request}}{a list with the request parameters}
+        \item{\strong{message}}{a list of status code(s) and message(s)
+            returned by the API}
+        \item{\strong{response}}{an XMLNode with the API-specific response
+            values. At this time, no further coercion is performed, so you
+            may have to use functions from the \code{XML} package to extract
+            the desired output.}
+    }
+}
 \description{
 The GetDeepSearchResults API finds a property for a specified address. The
 result set returned contains the full address(s), zpid and Zestimate data

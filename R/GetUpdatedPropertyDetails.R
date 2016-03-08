@@ -20,7 +20,17 @@
 #' @param zws_id The Zillow Web Service Identifier. Required.
 #' @param url URL for the GetUpdatedPropertyDetails Web Service. Required.
 #'
-#' @return
+#' @return A named list with the following elements:
+#'     \describe{
+#'         \item{\strong{request}}{a list with the request parameters}
+#'         \item{\strong{message}}{a list of status code(s) and message(s)
+#'             returned by the API}
+#'         \item{\strong{response}}{an XMLNode with the API-specific response
+#'             values. At this time, no further coercion is performed, so you
+#'             may have to use functions from the \code{XML} package to extract
+#'             the desired output.}
+#'     }
+#'
 #' @export
 #' @importFrom RCurl getURL
 #'
@@ -54,5 +64,5 @@ GetUpdatedPropertyDetails <- function(
         error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
     )
 
-    return(response)
+    return(preprocess_response(response))
 }
