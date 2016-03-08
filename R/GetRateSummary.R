@@ -19,6 +19,7 @@
 #'
 #' @return
 #' @export
+#' @importFrom RCurl getURL
 #'
 #' @examples
 #' \dontrun{
@@ -46,5 +47,7 @@ GetRateSummary <- function(
         'zws-id' = zws_id
     )
 
-    return(request)
+    response <- RCurl::getURL(request)
+
+    return(response)
 }

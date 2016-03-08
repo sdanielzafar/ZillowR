@@ -30,6 +30,7 @@
 #'
 #' @return
 #' @export
+#' @importFrom RCurl getURL
 #'
 #' @examples
 #' \dontrun{
@@ -59,5 +60,7 @@ GetZestimate <- function(
         'zws-id' = zws_id
     )
 
-    return(request)
+    response <- RCurl::getURL(request)
+
+    return(response)
 }
