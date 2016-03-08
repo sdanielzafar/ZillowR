@@ -4,6 +4,11 @@ RVersion: 3.2.3
 Repos: CRAN=https://cran.rstudio.com/,
     CRANextra=http://www.stats.ox.ac.uk/pub/RWin
 
+Package: BH
+Source: CRAN
+Version: 1.60.0-1
+Hash: 889445e87a2acd4cc58440957f3b0d1a
+
 Package: R6
 Source: CRAN
 Version: 2.1.2
@@ -162,6 +167,12 @@ Source: CRAN
 Version: 0.5
 Hash: f942db72a8f51e968b061f28058e2c57
 
+Package: rversions
+Source: CRAN
+Version: 1.0.2
+Hash: c006a9eaa80a091dcd87bb4003887b12
+Requires: curl, xml2
+
 Package: stringi
 Source: CRAN
 Version: 1.0-1
@@ -188,6 +199,12 @@ Package: withr
 Source: CRAN
 Version: 1.0.1
 Hash: e3d37838719e5d66652364e2aefebcee
+
+Package: xml2
+Source: CRAN
+Version: 0.1.2
+Hash: 97e011843386f179a5349f9ae80b4dca
+Requires: BH, Rcpp
 
 Package: yaml
 Source: CRAN
