@@ -1,4 +1,5 @@
 
+#' @importFrom methods is
 validate_arg <- function(x,
     required = FALSE,
     class = NULL,
@@ -17,7 +18,7 @@ validate_arg <- function(x,
     }
 
     if (!is.null(class) && length(class) == 1L && is.character(class)) {
-        if (!is.null(x) && !is(x, class)) y <- c(y, sprintf("'%s' must be %s", deparse(substitute(x)), class))
+        if (!is.null(x) && !methods::is(x, class)) y <- c(y, sprintf("'%s' must be %s", deparse(substitute(x)), class))
     }
 
     if (!is.null(length_min) && length(length_min) == 1L && is.numeric(length_min)) {
