@@ -3,8 +3,8 @@ Type: Package
 Title: R interface to Zillow API
 Version: 0.1
 Date: 2016-03-05
-Author: Justin Brantley <justinbrantley@me.com>
-Maintainer: Justin Brantley <justinbrantley@me.com>
+Author: Justin Brantley <fascinatingfingers@icloud.com>
+Maintainer: Justin Brantley <fascinatingfingers@icloud.com>
 URL: https://github.com/fascinatingfingers/ZillowR
 Description: Make calls to the Zillow API using R functions.
 License: GPL-3
