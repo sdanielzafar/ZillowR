@@ -10,7 +10,6 @@ Description: Make calls to the Zillow API using R functions.
 License: GPL-3
 LazyData: TRUE
 Imports:
-    datasets,
     methods,
     utils,
     RCurl,

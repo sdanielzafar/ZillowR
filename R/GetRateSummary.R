@@ -30,7 +30,6 @@
 #'
 #' @export
 #' @importFrom RCurl getURL
-#' @importFrom datasets state.abb
 #'
 #' @examples
 #' \dontrun{
@@ -44,7 +43,18 @@ GetRateSummary <- function(
     url = 'http://www.zillow.com/webservice/GetRateSummary.htm'
 ) {
     validation_errors <- c(
-        validate_arg(state, class = 'character', inclusion = c(datasets::state.abb, 'DC'), length_min = 1, length_max = 1),
+        validate_arg(state,
+            class = 'character',
+            inclusion = c(
+                'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI',
+                'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI',
+                'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC',
+                'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT',
+                'VT', 'VA', 'WA', 'WV', 'WI', 'WY', 'DC'
+            ),
+            length_min = 1,
+            length_max = 1
+        ),
         validate_arg(zws_id, required = TRUE, class = 'character', length_min = 1, length_max = 1),
         validate_arg(url, required = TRUE, class = 'character', length_min = 1, length_max = 1)
     )
