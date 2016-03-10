@@ -2,7 +2,7 @@
 ZillowR
 =======
 
-The ZillowR package provides an R interface to the Zillow Web Services API.
+Zillow, an online real estate company, provides real estate and mortgage data for the United States through a REST API. The ZillowR package provides an R function for each API service, making it easy to make API calls and process the response into convenient, R-friendly data structures. See <http://www.zillow.com/howto/api/APIOverview.htm> for the Zillow API Documentation.
 
 Installation and setup
 ----------------------
@@ -70,7 +70,7 @@ GetMonthlyPayments(price = 300000L)
 Each function returns a named list with the following elements:
 
 -   **request:** a list with the request parameters
--   **message:** a list of status code(s) and message(s) returned by the API
+-   \*\*<message:**> a list of status code(s) and message(s) returned by the API
 -   **response:** an XMLNode with the API-specific response values. At this time, no further coercion is performed, so you may have to use functions from the `XML` package to extract the desired output.
 
 Be sure to check out the [API documentation](http://www.zillow.com/howto/api/APIOverview.htm) to learn more about the available services
