@@ -45,7 +45,6 @@ set contains the following attributes:
 }
 \examples{
 \dontrun{
-GetUpdatedPropertyDetails(zpid = 48749425)
-}
+GetUpdatedPropertyDetails(zpid = 48749425)}
 }
 

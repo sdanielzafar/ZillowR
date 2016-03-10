@@ -43,7 +43,7 @@ for the property within its ZIP code.
 \examples{
 \dontrun{
 GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA')
-GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA', rentzestimate = TRUE)
-}
+GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA',
+                 rentzestimate = TRUE)}
 }
 

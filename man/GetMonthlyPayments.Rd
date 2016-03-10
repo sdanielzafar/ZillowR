@@ -54,7 +54,6 @@ estimated taxes and insurance are returned in the result set.
 GetMonthlyPayments(price = 300000L)
 GetMonthlyPayments(price = 300000L, down = 10)
 GetMonthlyPayments(price = 300000L, dollarsdown = 10000L)
-GetMonthlyPayments(price = 300000L, zip = 98109)
-}
+GetMonthlyPayments(price = 300000L, zip = 98109)}
 }
 

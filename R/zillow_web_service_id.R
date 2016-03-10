@@ -6,16 +6,16 @@
 #' Each subscriber to Zillow Web Services is uniquely identified by an ID
 #' sequence, and every request to Web Services requires this ID. You may pass
 #' your ID to each ZillowR function explicitly, but by default each function
-#' uses the value saved in the global "ZillowR-zws_id" option. The
+#' uses the value saved in the global 'ZillowR-zws_id' option. The
 #' \code{get_zillow_web_service_id} and \code{set_zillow_web_service_id}
 #' functions make it easy to manipulate this option.
 #'
-#' Visit the following URL to register for your own Zillow Web Service ID:
+#' Visit the following URL to register for your own Zillow Web Service ID: \cr
 #' http://www.zillow.com/webservice/Registration.htm
 #'
 #' @return
 #' \code{get_zillow_web_service_id} returns a character value with the current
-#' "ZillowR-zws_id" option, or \code{NULL} if unset.
+#' 'ZillowR-zws_id' option, or \code{NULL} if unset.
 #'
 #' \code{set_zillow_web_service_id} invisibly returns \code{NULL}.
 #'

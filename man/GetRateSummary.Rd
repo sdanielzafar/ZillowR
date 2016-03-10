@@ -42,7 +42,6 @@ if the optional state parameter is used.
 \examples{
 \dontrun{
 GetRateSummary()
-GetRateSummary(state = 'WA')
-}
+GetRateSummary(state = 'WA')}
 }
 

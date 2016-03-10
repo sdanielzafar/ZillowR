@@ -43,7 +43,6 @@ property for which the comparables are being retrieved.
 \examples{
 \dontrun{
 GetComps(zpid = 48749425, count = 5)
-GetComps(zpid = 48749425, count = 5, rentzestimate = TRUE)
-}
+GetComps(zpid = 48749425, count = 5, rentzestimate = TRUE)}
 }
 

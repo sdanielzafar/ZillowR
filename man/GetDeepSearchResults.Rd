@@ -44,7 +44,6 @@ details etc.
 \dontrun{
 GetDeepSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA')
 GetDeepSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA',
-                     rentzestimate = TRUE)
-}
+                     rentzestimate = TRUE)}
 }
 

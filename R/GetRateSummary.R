@@ -34,8 +34,7 @@
 #' @examples
 #' \dontrun{
 #' GetRateSummary()
-#' GetRateSummary(state = 'WA')
-#' }
+#' GetRateSummary(state = 'WA')}
 GetRateSummary <- function(
 
     state = NULL,
@@ -70,7 +69,7 @@ GetRateSummary <- function(
 
     response <- tryCatch(
         RCurl::getURL(request),
-        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+        error = function(e) {stop(sprintf("Zillow API call with request '%s' failed with %s", request, e))}
     )
 
     return(preprocess_response(response))

@@ -45,8 +45,7 @@
 #' @examples
 #' \dontrun{
 #' GetZestimate(zpid = 48749425)
-#' GetZestimate(zpid = 48749425, rentzestimate = TRUE)
-#' }
+#' GetZestimate(zpid = 48749425, rentzestimate = TRUE)}
 GetZestimate <- function(
     zpid = NULL,
     rentzestimate = FALSE,
@@ -72,7 +71,7 @@ GetZestimate <- function(
 
     response <- tryCatch(
         RCurl::getURL(request),
-        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+        error = function(e) {stop(sprintf("Zillow API call with request '%s' failed with %s", request, e))}
     )
 
     return(preprocess_response(response))

@@ -33,8 +33,7 @@
 #' @examples
 #' \dontrun{
 #' GetDeepComps(zpid = 48749425, count = 5)
-#' GetDeepComps(zpid = 48749425, count = 5, rentzestimate = TRUE)
-#' }
+#' GetDeepComps(zpid = 48749425, count = 5, rentzestimate = TRUE)}
 GetDeepComps <- function(
     zpid = NULL, count = NULL,
     rentzestimate = FALSE,
@@ -62,7 +61,7 @@ GetDeepComps <- function(
 
     response <- tryCatch(
         RCurl::getURL(request),
-        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+        error = function(e) {stop(sprintf("Zillow API call with request '%s' failed with %s", request, e))}
     )
 
     return(preprocess_response(response))

@@ -18,8 +18,8 @@
 #' @param height An integer value that specifies the height of the generated
 #'     image; the value must be between 100 and 300, inclusive.
 #' @param chartDuration The duration of past data that needs to be shown in the
-#'     chart. Valid values are "1year", "5years" and "10years". If unspecified,
-#'     the value defaults to "1year".
+#'     chart. Valid values are '1year', '5years' and '10years'. If unspecified,
+#'     the value defaults to '1year'.
 #' @param zws_id The Zillow Web Service Identifier. Required.
 #' @param url URL for the GetChart Web Service. Required.
 #'
@@ -41,8 +41,7 @@
 #' \dontrun{
 #' GetChart(zpid = 48749425)
 #' GetChart(zpid = 48749425, unit_type = 'dollar', width = 600, height = 300,
-#'          chartDuration = '10years')
-#' }
+#'          chartDuration = '10years')}
 GetChart <- function(
     zpid = NULL, unit_type = c('percent', 'dollar'),
     width = NULL, height = NULL, chartDuration = c('1year', '5years', '10years'),
@@ -74,7 +73,7 @@ GetChart <- function(
 
     response <- tryCatch(
         RCurl::getURL(request),
-        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+        error = function(e) {stop(sprintf("Zillow API call with request '%s' failed with %s", request, e))}
     )
 
     return(preprocess_response(response))

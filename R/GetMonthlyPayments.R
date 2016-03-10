@@ -42,8 +42,7 @@
 #' GetMonthlyPayments(price = 300000L)
 #' GetMonthlyPayments(price = 300000L, down = 10)
 #' GetMonthlyPayments(price = 300000L, dollarsdown = 10000L)
-#' GetMonthlyPayments(price = 300000L, zip = 98109)
-#' }
+#' GetMonthlyPayments(price = 300000L, zip = 98109)}
 GetMonthlyPayments <- function(
     price = NULL,
     down = NULL, dollarsdown = NULL, zip = NULL,
@@ -73,7 +72,7 @@ GetMonthlyPayments <- function(
 
     response <- tryCatch(
         RCurl::getURL(request),
-        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+        error = function(e) {stop(sprintf("Zillow API call with request '%s' failed with %s", request, e))}
     )
 
     return(preprocess_response(response))

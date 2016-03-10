@@ -36,8 +36,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' GetUpdatedPropertyDetails(zpid = 48749425)
-#' }
+#' GetUpdatedPropertyDetails(zpid = 48749425)}
 GetUpdatedPropertyDetails <- function(
     zpid = NULL,
 
@@ -61,7 +60,7 @@ GetUpdatedPropertyDetails <- function(
 
     response <- tryCatch(
         RCurl::getURL(request),
-        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+        error = function(e) {stop(sprintf("Zillow API call with request '%s' failed with %s", request, e))}
     )
 
     return(preprocess_response(response))

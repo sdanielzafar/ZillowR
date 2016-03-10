@@ -44,7 +44,6 @@ call also returns rich property data for the comparables.
 \examples{
 \dontrun{
 GetDeepComps(zpid = 48749425, count = 5)
-GetDeepComps(zpid = 48749425, count = 5, rentzestimate = TRUE)
-}
+GetDeepComps(zpid = 48749425, count = 5, rentzestimate = TRUE)}
 }
 

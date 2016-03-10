@@ -30,7 +30,7 @@ uses the value saved in the global "ZillowR-zws_id" option. The
 \code{get_zillow_web_service_id} and \code{set_zillow_web_service_id}
 functions make it easy to manipulate this option.
 
-Visit the following URL to register for your own Zillow Web Service ID:
+Visit the following URL to register for your own Zillow Web Service ID: \cr
 http://www.zillow.com/webservice/Registration.htm
 }
 \examples{

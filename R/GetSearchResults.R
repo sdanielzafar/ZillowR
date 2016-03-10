@@ -32,8 +32,8 @@
 #' @examples
 #' \dontrun{
 #' GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA')
-#' GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA', rentzestimate = TRUE)
-#' }
+#' GetSearchResults(address = '2114 Bigelow Ave', citystatezip = 'Seattle, WA',
+#'                  rentzestimate = TRUE)}
 GetSearchResults <- function(
     address = NULL, citystatezip = NULL,
     rentzestimate = FALSE,
@@ -61,7 +61,7 @@ GetSearchResults <- function(
 
     response <- tryCatch(
         RCurl::getURL(request),
-        error = function(e) {stop(sprintf('Zillow API call with request "%s" failed with %s', request, e))}
+        error = function(e) {stop(sprintf("Zillow API call with request '%s' failed with %s", request, e))}
     )
 
     return(preprocess_response(response))
