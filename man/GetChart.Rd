@@ -24,8 +24,8 @@ image; the value must be between 200 and 600, inclusive.}
 image; the value must be between 100 and 300, inclusive.}
 
 \item{chartDuration}{The duration of past data that needs to be shown in the
-chart. Valid values are "1year", "5years" and "10years". If unspecified,
-the value defaults to "1year".}
+chart. Valid values are '1year', '5years' and '10years'. If unspecified,
+the value defaults to '1year'.}
 
 \item{zws_id}{The Zillow Web Service Identifier. Required.}
 
