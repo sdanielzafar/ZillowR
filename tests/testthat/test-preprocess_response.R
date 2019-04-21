@@ -14,13 +14,9 @@ for (xml_file in XML_FILES) {
         expect_true(is.list(preprocess_response(response)))
         expect_identical(length(preprocess_response(response)), 3L)
         expect_identical(names(preprocess_response(response)), c('request', 'message', 'response'))
-        if (xml_file == 'GetRateSummary.xml') {
-            expect_true(methods::is(preprocess_response(response)$request, 'NULL'))
-        } else {
-            expect_true(methods::is(preprocess_response(response)$request, 'list'))
-        }
+        expect_true(methods::is(preprocess_response(response)$request, 'list'))
         expect_true(methods::is(preprocess_response(response)$message, 'list'))
-        expect_true(methods::is(preprocess_response(response)$response, 'XMLNode'))
+        expect_true(methods::is(preprocess_response(response)$response, 'list'))
     })
 }
 
