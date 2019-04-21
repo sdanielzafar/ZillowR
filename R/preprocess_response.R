@@ -1,13 +1,12 @@
 
 #' @importFrom XML xmlTreeParse xmlRoot xmlToList
 preprocess_response <- function(x) {
-    y <- XML::xmlRoot(XML::xmlTreeParse(x))
 
-    y <- list(
-        request = XML::xmlToList(y[['request']]),
-        message = XML::xmlToList(y[['message']]),
+    y <- xml2::as_list(xml2::read_xml(x))[[1]]
+
+    list(
+        request = y[['request']],
+        message = y[['message']],
         response = y[['response']]
     )
-
-    return(y)
 }
