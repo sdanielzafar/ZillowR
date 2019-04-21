@@ -1,7 +1,7 @@
 Package: ZillowR
 Type: Package
 Title: R Interface to Zillow Real Estate and Mortgage Data API
-Version: 0.1.0
+Version: 0.1.1
 Date: 2016-03-26
 Author: Justin Brantley <fascinatingfingers@icloud.com>
 Maintainer: Justin Brantley <fascinatingfingers@icloud.com>
@@ -18,7 +18,7 @@ Imports:
     methods,
     utils,
     RCurl,
-    XML
+    xml2
 Suggests:
     testthat
 RoxygenNote: 5.0.1
